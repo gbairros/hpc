@@ -38,7 +38,7 @@ int main(){
     data = "Example data";
 
     {
-//        std::lock_guard<std::mutex> lk(m);
+        std::lock_guard<std::mutex> lk(m);
         ready = true;
         std::cout << "Main signals data ready for processing\n";
     }
